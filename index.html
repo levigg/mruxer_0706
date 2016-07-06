@@ -1,0 +1,440 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width; target-densitydpi=device-dpi; initial-scale=1; maximum-scale=2.0; user-scalable=yes"
+	/>
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<link rel="icon" href="favicon.ico">
+	<title>MRUXER</title>
+	<link href="css/reset.css" rel="stylesheet" type="text/css">
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+	<link href="css/index.css" rel="stylesheet" type="text/css">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+
+	<!-- navbar -->
+	<nav class="navbar navbar-fixed-top navbar-inverse" style="border: 0px; background-color: rgba(0,0,0,0.65);">
+		<div id="navbar-wrapper" style="padding-right:0;">
+			<div id="navbar-header">
+				<a id="navbar-brand" href="index.html"><img src="images/mruxer_images/navIcon.png" style="color: rgba(255,255,255,1);" alt="MRUXER" /></a>
+			</div>
+
+			<div id="navbar">
+				<ul>
+					<li><a href="#subject" >服務項目</a></li>
+					<li><a href="mailto:Help@mruxer.com">案例分享</a></li>
+					<li><a href="#lang" class="en">關於我們</a></li>
+				</ul>
+
+			</div>
+		</div>
+	</nav>
+	<!-- //navbar -->
+
+
+	<!-- header -->
+	<div id="header">
+		<div class="content">
+			<div>
+				<a data-toggle="modal" data-target="#videoModal"><img id="play" width="80" height="80" src="images/mruxer_images/playButton.png" />
+				</a>
+			</div>
+
+
+		</div>
+	</div>
+	<div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="videoModal" aria-hidden="true">
+		<div class="modal-dialog">
+
+			<div class="modal-body">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				<div>
+					<iframe width="100%" height="400" src="http://www.youtube.com/embed/loFtozxZG0s"></iframe>
+
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+	<script>
+var videoSrc = $("#videoModal iframe").attr("src");
+
+$('#videoModal').on('show.bs.modal', function () { // on opening the modal
+  // set the video to autostart
+  $("#videoModal iframe").attr("src", videoSrc+"?autoplay=1");
+});
+
+$("#videoModal").on('hidden.bs.modal', function (e) { // on closing the modal
+  // stop the video
+  $("#videoModal iframe").attr("src", null);
+});
+</script>
+
+
+	<!-- //header -->
+
+	<!-- slide -->
+	<div id="slide">
+		<ul>
+			<li>
+				<div class="content1"><img width="240px" height="161px" src="images/mruxer_images/sliderIcon4.png" />
+					<h1>你還在崇拜數據嗎?</h1>
+					<p>坊間看似包羅萬象的數據分析為你改變了什麼?<br />數據能有效解決你的問題?</p>
+				</div>
+			</li>
+			<li>
+				<div class="content1"><img width="170px" height="160px" src="images/mruxer_images/sliderIcon3.png" />
+					<h1>真相來自過程</h1>
+					<p>越了解消費者行為的關注過程<br />就越能掌握致勝的關鍵</p>
+				</div>
+			</li>
+			<li>
+				<div class="content1"><img width="160px" height="161px" src="images/mruxer_images/sliderIcon2.png" />
+					<h1>瀏覽網頁僅有8秒鐘的耐心</h1>
+					<p>慢了的每一秒<br />你的顧客都在流失</p>
+				</div>
+			</li>
+			<li>
+				<div class="content1"><img width="160px" height="158px" src="images/mruxer_images/sliderIcon1.png" />
+					<h1>數據≠真相</h1>
+					<p>拿到數據不代表能了解你的顧客<br />有了數據更無法保證能改變現狀</p>
+				</div>
+			</li>
+			<li>
+				<div class="content1"><img width="241px" height="162px" src="images/mruxer_images/sliderIcon5.png" />
+					<h1>MRUXER 為您解開數據的迷思</h1>
+					<p>揭露企業最關心的真相</p>
+				</div>
+			</li>
+			<li>
+				<div class="content2">
+					<p style="margin-top:170px; margin-right:11%;">從科學的角度  <img src="images/mruxer_images/sliderIcon_eye.png" /></p>
+					<p style="margin-right:6%;">您需要MRUXER</p>
+				</div>
+			</li>
+			<li>
+				<div class="content3">
+					<p style="margin-left:6%; margin-top:85px;">如何追求真相  <img src="images/mruxer_images/sliderIcon_eye.png" /></p>
+					<p style="margin-left:8%;">從神學的角度</p>
+					<p style="margin-left:8%;">您可以問水晶球</p>
+				</div>1
+			</li>
+
+		</ul>
+
+		<div id="slide-pager"></div>
+	</div>
+	<!-- //slide -->
+
+	<div id="subject" class="subject">
+		<div class="container">
+			<img style="margin-top:95px;" src="images/mruxer_images/aboutMruxer.png" />
+			<p>Ｍr. Uxer（悠石先生）講究的不只是視覺美觀或程式技術，我們更在意使用者的真實產品體驗，我們了解內容行銷的重要性及口碑行銷的傳達力，但是在內容設計及加強推廣之前，我們認為應先解析消費者的直覺行為模式，進而擬定品牌策略，規劃產品設計及製作廣告內容，我們擁有市場上最專業且獨家的眼動技術，引領您從前期的設計規劃到後期數位媒體行銷策略的每一個環節，皆能檢視每一秒使用者的關注區域與各個步驟，讓您了解使用者最細微的感受，現在就立即體驗MRUXER的服務！</p>
+
+			<div class="row">
+				<div class="col-sm-4 aboutPic" style="padding-left: 0px;
+	padding-right: 0px;">
+					<a href="#slide1"><img src="images/mruxer_images/aboutIcon3.png" /></a>
+				</div>
+				<div class="col-sm-4 aboutPic" style="padding-left: 0px;
+	padding-right: 0px;">
+					<a href="#slide2"><img src="images/mruxer_images/aboutIcon2.png" /></a>
+				</div>
+				<div class="col-sm-4 aboutPic" style="padding-left: 0px;
+	padding-right: 0px;">
+					<a href="#slide3"><img src="images/mruxer_images/aboutIcon1.png" /></a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="slide1">
+		<ul>
+			<li>
+				<div class="content1">
+					<h1 style="margin-right:15%; margin-top:155px;">您真正了解使用者感受</h1>
+					<h1 style="margin-left:10%;">並親眼所見了嗎?</h1>
+				</div>
+			</li>
+			<li>
+				<div class="content2">
+					<h1 style="margin-top:50px; margin-left:5%;">從科學規劃視覺  <img src="images/mruxer_images/sliderIcon_eye.png" /></h1>
+					<h1 style="margin-left:7%;">從消費者的視線角度</h1>
+					<h1 style="margin-left:7%;">規劃零死角的設計</h1>
+				</div>
+			</li>
+		</ul>
+		<div id="slide-pager1"></div>
+	</div>
+
+	<div id="part1" class="part">
+		<div class="container">
+			<h1>設計規劃</h1>
+			<p>從視覺創意發想、介面設計到軟體開發，我們都將邀請目標使用者共同參與設計劃，不主觀評斷使用者體驗，透過完整記錄使用者關注過程，主動察覺哪些設計環節必須修正，MRUXER將帶您回溯每一秒使用者的關注重點，讓您更了解使用者的操作輪廓，達成真正為各專案量身訂做的設計規劃，提升品牌共鳴及創造更直覺的使用者體驗</p>
+
+			<div class="row">
+				<div class="col-sm-4 partPic">
+					<img src="images/mruxer_images/part1Icon3.png" />
+					<h2>利用科學規劃視覺</h2>
+					<p>使用獨家眼動技術於設計前置過程分析使用者的直覺操作行為，並同時記錄使用者在競爭市場指標性介面的體驗過程，加以比對研究並擬定規劃最完美的產品設計，以確保使用者於每個功能環節上都能優於市場既有介面，取得品牌領先優勢</p>
+				</div>
+				<div class="col-sm-4 partPic">
+					<img src="images/mruxer_images/part1Icon2.png" />
+					<h2>真實的使用者體驗</h2>
+					<p>從收集資料分析→框架規劃→視覺設計→程式設計→使用者測試→上線，我們在產品開發的每個環節都會安排眼動追蹤分析師完整記錄使用者最直覺的關注及操作行為，針對體驗的達成率做修正及改善，確保每個設計細節都能達到零死角的使用者體驗</p>
+				</div>
+				<div class="col-sm-4 partPic">
+					<img src="images/mruxer_images/part1Icon1.png" />
+					<h2>完整的服務團隊</h2>
+					<p>MRUXER擁有專業及完整的設計規劃團隊，包含眼動追蹤分析師、使用者經驗分析師、前端介面設計、動畫設計、設計專案企劃、前後端工程師及眼動軟硬體開發工程師等數十位專案配置人員，及各專案的目標使用者</p>
+				</div>
+			</div>
+			<a href="#"><img style="margin-top:70px;" src="images/mruxer_images/part1button.png" /></a>
+		</div>
+	</div>
+
+	<div id="slide2">
+		<ul>
+			<li>
+				<div class="content1">
+					<h1 style="margin-right:9%; margin-top:155px;">先有視覺關注</h1>
+					<h1 style="margin-left:10%;">還是先有點擊行為?</h1>
+				</div>
+			</li>
+			<li>
+				<div class="content2">
+					<h1 style="margin-left:6%;margin-top:300px;">預先排演的媒體素材  <img src="images/mruxer_images/sliderIcon_eye.png" /></h1>
+					<h1 style="margin-left:19%">才能正式演出</h1>
+				</div>
+			</li>
+		</ul>
+		<div id="slide-pager2"></div>
+	</div>
+
+	<div id="part2" class="part">
+		<div class="container">
+			<h1>數位行銷</h1>
+			<p>我們將協助您追求更有效的點擊轉換，而非限定於媒體預算內的無效流量，在快速變遷的數位時代，我們認為數位行銷應該將目標受眾放在第一位，了解目標族群和潛在受眾的習慣特性後再客製最貼近受眾的廣告創意，才能有效傳達廣告目的，MRUXER將透過的獨家的視覺分析工具提升版位價值與受眾點擊的正向關係，協助您在媒體採購前先進行版位預排，讓您預先與目標受眾進行對話，掌握最關鍵的媒體傳播時刻</p>
+
+			<div class="row">
+				<div class="col-sm-4 partPic">
+					<img src="images/mruxer_images/part2Icon3.png" />
+					<h2>全方位的社群行銷</h2>
+					<p>我們認為透過目標受眾角度進行社群經營，針對每一則社群貼文所針對的目標使用者進行溝通，才能讓使用者願意在滑動營幕的過程中為您的廣告內容停留，精挑細選最佳的傳達方式經營社群媒體，是我們希望創造的社群行銷新視野</p>
+				</div>
+				<div class="col-sm-4 partPic">
+					<img src="images/mruxer_images/part2Icon2.png" />
+					<h2>媒體素材精準預排</h2>
+					<p>在設計廣告素材的過程中請目標受眾實際瀏覽不同版本的廣告內容，量化分析視覺熱區及視線路徑，提供您各媒體素材的關注比例及區域，讓您預先了解目標受眾如何觀看廣告，在廣告投放前進行最佳化調整以達成更精準的內容傳遞</p>
+				</div>
+				<div class="col-sm-4 partPic">
+					<img src="images/mruxer_images/part2Icon1.png" />
+					<h2>版位價值新公式</h2>
+					<p>除了點擊成本，版位計價等傳統公式外，當廣告預算投放後，除了曝光次數，您是否能得知廣告實際關注度？MRUXER將帶您計算各媒體平台曝光率產生前的廣告版位價值，讓您更有效率的整合RTB精準受眾行銷與原生廣告，掌握每一秒目標受眾的目光</p>
+				</div>
+			</div>
+			<a href="#"><img style="margin-top:70px;" src="images/mruxer_images/part2button.png" /></a>
+		</div>
+	</div>
+
+	<div id="slide3">
+		<ul>
+			<li>
+				<div class="content1">
+					<h1 style="margin-right:10%; margin-top:155px;">臉部辨識</h1>
+					<h1 style="margin-left:5%;">就代表真實觀看?</h1>
+				</div>
+			</li>
+			<li>
+				<div class="content2">
+					<h1 style="margin-right:20%; margin-top:370px;">當眼球成為廣告看板的控制器</h1>
+					<h1 style="margin-right:15%;"><img src="images/mruxer_images/sliderIcon_eye.png" />  是現在不是未來</h1>
+				</div>
+			</li>
+		</ul>
+		<div id="slide-pager3"></div>
+	</div>
+
+	<div id="part3" class="part">
+		<div class="container">
+			<h1>互動媒體</h1>
+			<p>MRUXER將整合眼動軟硬體追蹤技術，巧妙地將產品或品牌形象置入於互動媒體看板中，創造獨一無二並極具話題性的互動內容，我們擁有頂尖的數位廣告製作團隊，從體感、AR、VR及APP互動到眼動應用歷經多年經驗，我們十分了解必須有精準的媒體分析及成熟的策略規劃，才能讓您的品牌在正確的時間點達到最大的廣告效益，只要您有創新的想法，歡迎與我們聯繫，一同與MRUXER團隊創造專屬您的互動媒體</p>
+
+			<div class="row">
+				<div class="col-sm-4 partPic">
+					<img src="images/mruxer_images/part3Icon3.png" />
+					<h2>眼動技術應用</h2>
+					<p>我們將利用眼動技術針對您的品牌與產品建構創意巧思，從廣告受眾角度進行互動媒體操作，讓您的品牌在受眾關注的路徑上無縫接軌，MRUXE將透過不同的眼動資訊思考每一次的互動專案</p>
+				</div>
+				<div class="col-sm-4 partPic">
+					<img src="images/mruxer_images/part3Icon2.png" />
+					<h2>互動屏新玩法</h2>
+					<p>一秒吸睛的互動媒體，不須任何操作指令也不須配戴任何載具，MRXUER獨家研發出眾多以眼球與廣告互動的新玩法，讓受眾眼球來決定觀看廣告內容，直覺的互動創意才是新趨勢，與MRUXER進入眼球崛起的時代</p>
+				</div>
+				<div class="col-sm-4 partPic">
+					<img src="images/mruxer_images/part3Icon1.png" />
+					<h2>眼球精準分析</h2>
+					<p>市場上唯一分析戶外媒體關注效益，MRUXER將捕捉每一毫秒受眾觀看廣告的路徑，準確分析不同區域被關注的時間，以及互動時每個環節的視覺軌跡，讓您的互動媒體價值能夠精準量化的呈現</p>
+				</div>
+			</div>
+			<a href="#"><img style="margin-top:70px;" src="images/mruxer_images/part3button.png" /></a>
+		</div>
+	</div>
+<!--
+	<div id="part1" class="part">
+		<div class="container">
+			
+		</div>
+	</div>
+
+
+	<div id="part2" class="part">
+		<div class="container">
+			<div class="txt">
+				<h2>讓您的廣告內容更吸睛</h2>
+				<p>讓您的廣告內容更吸睛：我們將指引您找到廣告設計的最佳版本，讓我們來告訴您如何提升消費者的關注</p>
+				<p class="en2">It’s really hard to design products by focus groups. A lot of times, people don't know what they want until you show
+					it to them.</p>
+				<p class="en2">Steve Jobs, CEO of Apple</p>
+			</div>
+			<div class="pic"><img src="images/index/item2_02.png" /></div>
+		</div>
+	</div>
+
+
+	<div id="part3" class="part">
+		<div class="container">
+			<div class="pic"><img src="images/index/item3_02.jpg" /></div>
+			<div class="txt">
+				<h2>領先你的同業對手</h2>
+				<p>MRUXER是最好測試與競爭業者差距的管道，給您更多超越對手的可能</p>
+				<p class="en2">Good design is the most important way to differentiate ourselves from our competitors.</p>
+				<p class="en2">Yun Jong Yong, CEO of Samsung</p>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="part4" class="part">
+		<div class="container">
+			<div class="txt">
+				<h2>使用者行為盡收眼底</h2>
+				<p>無論是網站高跳出率或離開率，我們都將帶您輕鬆了解事發的原因</p>
+				<p class="en2">Pay attention to what users do, not what they say.</p>
+				<p class="en2">Jakob Nielsen, Web usability consultant</p>
+			</div>
+			<div class="pic"><img src="images/index/item4_02.png" /></div>
+		</div>
+	</div>
+
+
+	<div id="part5" class="part">
+		<div class="container">
+			<div class="pic"><img src="images/index/item5_02.jpg" /></div>
+			<div class="txt">
+				<h2>高轉換率的消費體驗</h2>
+				<p>市調分析僅提供您網路購物的訂單轉換率的多寡，無法得知消費者採取購買行為的確切原因，MRUXER能給您更多具體的建議</p>
+				<p class="en2">Customers always know what’s wrong. They can't always tell you what they want, but they always can tell you what's wrong.</p>
+				<p class="en2">Carly Fiorina, CEO of Hewlett-Packard</p>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="part6" class="part">
+		<div class="container">
+			<div class="txt">
+				<h1>了解使用者 就選MR.UXER</h1>
+				<p>市調分析僅提供您網路購物的訂單轉換率的多寡，無法得知受眾採取購買行為的確切原因，MRUXER能給您更多具體的建議</p>
+				<div class="btn">
+					<div class="btn1"><a href="products.html">瞭解更多產品服務</a></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+-->
+
+	<!-- footer -->
+	<div id="footer">
+		<div class="container">
+			<div class="row">
+				<div class="products">
+					<div class="row2">
+						<div style="width:300px;">
+							<h2 class="ch">聯絡我們</h2>
+							<ul>
+								<li><a href="#"style="color:rgb(255,129,96); font-size:1.2em;">sales@senseet.com</a></li>
+								<li><p style="font-size:1.1em; color:#979ea6;">台北市信義區基隆路二段91號5樓</p></li>
+								<li><p style="font-size:1.2em; color:#979ea6;">02-2732-8836</p></li>
+
+							</ul>
+						</div>
+						<div>
+							<h2 class="ch">服務項目</h2>
+							<ul >
+								<li><a href="#part1" >設計規劃</a></li>
+								<li><a href="#part2" >數位行銷</a></li>
+								<li><a href="#part3" >互動媒體</a></li>
+							</ul>
+						</div>
+					</div>
+
+				</div>
+				<!-- //products -->
+
+
+				<div class="contact">
+					<h2 class="ch">關於團隊</h2>
+					<ul>
+						<li class="icon">
+							<div><a style="width:100px;" href="http://www.senseet.com"><img src="images/mruxer_images/footerIcon1.png" class="leave" /><img src="images/mruxer_images/footerIcon1.png" class="enter" /></a></div>
+							<a href="https://www.facebook.com/SENSE-森思眼動-1587244238181311/?ref=ts&fref=ts"><img src="images/mruxer_images/footerIcon2.png" class="leave" /><img src="images/mruxer_images/footerIcon2.png" class="enter" /></a>
+							<a href="#"><img src="images/mruxer_images/footerIcon3.png" class="leave" /><img src="images/mruxer_images/footerIcon3.png" class="enter" /></a>
+						</li>
+					</ul>
+				</div>
+				<!-- //contact -->
+
+			</div>
+			<!-- //row -->
+			<p class="copyright"><span>Copyright &copy; 2016 <a href="http://www.senseet.com" style="color:white;">SENSE</a> INNOVATION All Rights Reserved.</span></p>
+		</div>
+		<!--//container-->
+	</div>
+
+	<script src="js/libs/jquery.min.js" type="text/javascript"></script>
+	<script src="js/libs/cycle2/jquery.cycle2.min.js" type="text/javascript"></script>
+
+	<script src="js/tpl.js" type="text/javascript"></script>
+	<script src="js/index.js" type="text/javascript"></script>
+	<!--//footer-->
+
+	<div id="cutNav" class="scrollto">
+		<a href="#subject" class="current"><span></span></a>
+		<a href="#slide1"><span></span></a>
+		<a href="#part1"><span></span></a>
+		<a href="#slide2"><span></span></a>
+		<a href="#part2"><span></span></a>
+		<a href="#slide3"><span></span></a>
+		<a href="#part3"><span></span></a>
+
+	</div>
+
+</body>
+
+</html>
